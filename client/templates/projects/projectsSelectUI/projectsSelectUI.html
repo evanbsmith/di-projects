@@ -1,0 +1,22 @@
+<template name="projectsSelectUI">
+	  <div>
+		  <h1>Show <u>All</u> Projects in <u>the World</u> focusing on <u>Civil Society</u>.</h1>
+	  </div>
+	  <div class="form-group">
+			<label>Select Region</label>
+			{{#each regions}}
+				<label class="checkbox-inline">
+					<input class="regionInput" type="checkbox" value={{value}} {{regionChecked}}> {{value}}
+				</label>
+			{{/each}}
+	      </div>
+	  <div class="btn-group" data-toggle="buttons">
+	  	<label class="btn btn-default active">
+			<input class="viewInput" type="radio" name="projectViews" id="projectsViewCards" autocomplete="off" checked><i class="fa fa-th-large"> List</i>
+		</label>
+	  	<label class="btn btn-default">
+			<input class="viewInput" type="radio" name="projectViews" id="projectsViewSummary" autocomplete="off"><i class="fa fa-pie-chart"> Summary</i>
+		</label>
+	  </div>
+</template>
+  

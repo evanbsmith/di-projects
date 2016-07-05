@@ -1,0 +1,48 @@
+<template name="projectsViewSummary">
+		<div class="col-xs-6">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <table class="table">
+			    	<caption>Projects by Region</caption>
+					<thead>
+						<tr>
+							<th>Region</th>
+							<th>Projects</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{#each regions}}
+							<tr>
+								<td>{{value}}</td>
+								<td>{{numProjectsInRegion}}</td>
+							</tr>
+						{{/each}}
+							<tr>
+								<td>Total</td>
+								<td>{{numProjects}}</td>
+							</tr>
+					</tbody>
+			    </table>
+			  </div>
+			</div>
+		</div>
+		<!-- <div class="col-xs-6">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="chart-wrapper">
+						<canvas id="regionChart"></canvas>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="col-xs-6">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div id="nvd3BarChart" class="svgChart">
+						
+					</div>
+				</div>
+			</div>	
+		</div>
+
+</template>

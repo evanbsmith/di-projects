@@ -1,0 +1,13 @@
+<template name="projects">
+  <div class="template-projects">
+    <div class="page-header">
+      {{>projectsSelectUI}}
+	  
+    </div>
+	
+	<div class="row">
+		{{> Template.dynamic template=getProjectsView}}
+		
+	</div>
+  </div>
+</template>

@@ -1,0 +1,23 @@
+<template name="projectCard">
+	<div class="col-xs-4">
+		<div class="panel panel-default project-card">
+			<div class="panel-heading">
+			    <strong>{{project_name}}</strong>
+				<h2 class="panel-title"><small>{{project_code}}</small></h2>
+			</div>
+			<div class="panel-body">
+                <div>
+					<p><em>{{formatMonthYear start_date}} - {{formatMonthYear end_date}}</em></p>
+					<p>Status: <strong>Active</strong></p>
+					<p>Tags: Rule of Law, Civil Society, Assessment, Analytical</p>
+				</div>
+				<div>
+                    
+                </div>
+                <div>
+                    <a class="btn btn-info" href="#" role="button">View</a>
+                </div>
+            </div>
+		</div>
+	</div>
+</template>
